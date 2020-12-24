@@ -1,0 +1,108 @@
+section.event{
+    height:600px;
+    padding:40px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+section.event>.article{
+    width:67%;
+    min-height: 50%;
+    box-sizing: border-box;
+    border: solid 1px black;
+    display: flex;
+    margin-bottom: 20px;
+}
+section.event>.article>.picture{
+    width:50%;height:100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-size: cover;
+    opacity: 0.9;
+}
+section.event>.article>.picture:hover{
+    opacity: 1;
+}
+section.event>.article>.Pic1{
+    background-image: url(event1.jpg);
+    background-position: 0% 40%;
+}
+section.event>.article>.Pic2{
+    background-image: url(event2.jpg);
+    background-position: 0% 70%;
+}
+section.event>.article>.words{
+    width:50%;height:100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+section.event>.article>.words>.artiContent>.title{
+    font-size: 1.5em;
+    font-weight: 800;
+    line-height: 1.25em;
+    margin: 20px 0px;
+}
+section.event>.article>.words>.optional{
+    font-size: 0.8em;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+section.event>.article>.words>.optional>.btn{
+    font-weight: 900;
+    text-decoration: underline;
+}
+footer{
+    margin-top: 5%;
+}
+footer>.copyright{
+    width:100%;
+    background-color: #2D2D2D;
+    color:white;
+    font-size: 0.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px 0px;
+}
+/* 螢幕尺寸小於800px,套用以下設定 */
+@media(max-width:800px){
+    section.event{
+        height:auto;
+        padding:35px 0px 25px 0px;
+    }
+    section.event>.article{
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        height:100%;
+        width:90%;
+    }
+    section.event>.article>.picture{
+        width:100%;
+        padding: 35% 0%;    }
+    section.event>.article>.words{
+        width:100%;
+        height:auto;
+
+    }
+    section.event>.article>.words>.artiContent>.title{
+        margin: 0px 0px 10px 0px;
+        font-size: 1.2em;
+    }
+    section.event>.article>.words>.artiContent>.text{
+        font-size: 0.8em;
+    }
+    section.event>.article>.words>.optional{
+        font-size: 0.5em;
+    }
+    footer{
+        margin-top: 0px;
+    }
+    footer>.copyright{
+    padding: 8px 0px;
+    font-size: 0.4em;
+    }
+}

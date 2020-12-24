@@ -1,0 +1,149 @@
+body{
+  margin: 0px;
+  font-size: 20px;
+  font-family:微軟正黑體,sans-serif;
+}
+nav{
+  width:100%;
+  height: 620px;
+  background-image:url(https://images.unsplash.com/photo-1597310078610-36db93d93cf3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80);
+  background-size:cover;
+  background-attachment: fixed;
+  background-position: center 40% ;
+}
+nav>.navigation{
+  display:flex;
+  background-color:#130D0C;
+  color:white;
+  justify-content:center;
+  margin-bottom:180px;
+}
+nav>.navigation>.logo{
+  /*   2em=200% */
+  font-size: 2em;
+  font-family: 'Sawarabi Mincho', sans-serif;
+  color:white;
+  display: flex;align-items: center;
+  margin-right: 40%;
+}
+nav>.navigation>.btn{
+  display:flex;align-items: center;
+}
+nav>.navigation>.btn>.intro{
+  padding:5px 10px;
+  background-color:red;
+  border-radius:20px;
+  text-shadow:2px 2px 5px black;
+  cursor: pointer;
+}
+nav>.navigation>.btn>.intro:hover{
+  background-color: #DE0505;
+  text-shadow:3px 3px 5px white;
+  transform: scale(0.95,0.95);
+  transition: 0.1s;
+}
+/* 手機新手上路選單 */
+nav>.navigation>.btn>.mobileIntroList{
+  display: none;
+  position: fixed;top:0px;left:0px;
+  width: 100%;height:100%;
+  background-color: rgba(51,47,47,0.9);
+}
+nav>.navigation>.btn>.mobileIntroList>.item{
+  font-size: 0.8em;
+  text-align: center;
+  color:#D6CFCF;
+  margin-top: 50px;
+  cursor: pointer;
+}
+nav>.navigation>.btn>.mobileIntroList>.close{
+  position: absolute;top:10px;right:10px;
+  cursor: pointer;
+}
+
+/* 手機新手上路按鈕改為ICON */
+nav>.navigation>.btn>.mobile-introIcon{
+  display: none;
+}
+nav>.navigation>.btn>.mobile-introIcon>.circle{
+  border:solid 1px white;
+  border-radius: 30px;
+  margin-right:10px;
+  background-color: red;
+}
+nav>.navigation>.btn>.mobile-introIcon>.circle>.questionIcon{
+  padding:0px 9px;
+}
+nav>.navigation>.btn>.FB{
+  font-size:1.5em;
+  border:1px solid white;
+  border-radius:10px;
+  margin-left: 10px;
+  padding:0px 10px;
+}
+nav>.navigation>.btn>.FB:hover{
+  background-color: white;
+  color:#130D0C;
+  cursor: pointer;
+  font-weight: 800;
+  transform:scale(0.9,0.9);
+  transition:0.1s;
+}
+nav>.content{
+  margin-bottom:240px;
+  text-align:center;
+}
+nav>.content>h5{
+  line-height:0.1em;
+  font-size:1.2em;
+}
+nav>.content>h2{
+  font-size:4em;
+  line-height:0.5em;
+  margin-left: 7%;
+}
+nav>.slideshow{
+  display:flex;justify-content:center;
+  padding-left: 0px;
+}
+nav>.slideshow>.bar{
+  display:inline-block;
+  border-bottom:solid 4px white;
+  padding:0px 50px;
+  margin:0px 5px;
+}
+/* 螢幕尺寸小於800px,套用以下設定 */
+@media(max-width:800px){
+ nav{
+   height: 520px;
+   background-position: 55% 30%;
+ }
+ nav>.navigation>.logo{
+   margin-right: 18%;
+   font-size: 1.5em;
+ }
+ nav>.navigation>.btn>.intro{
+  display: none;
+}
+ nav>.navigation>.btn>.mobile-introIcon{
+  display: flex;
+  cursor: pointer;
+}
+nav>.navigation>.btn>.FB{
+  font-size:1em;
+  border:1px solid white;
+  border-radius:10px;
+  margin-left: 5px;
+  padding:0px 10px;
+}
+nav>.content{
+  margin-bottom: 190px;
+}
+ nav>.content>h2{
+   font-size: 2.8em;
+ }
+ nav>.slideshow>.bar{
+   padding:0px 30px;
+ }
+
+}
